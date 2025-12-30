@@ -1,7 +1,7 @@
 solidbeamfem
 ============
 
-Finite element solver for solid beams.
+Finite element solver for beams.
 
 .. toctree::
    :maxdepth: 2
