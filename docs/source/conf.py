@@ -12,4 +12,6 @@ html_theme_options = {
     "use_repository_button": True,
 }
 
+root_doc = "index"
+
 exclude_patterns = []
