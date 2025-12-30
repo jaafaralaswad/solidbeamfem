@@ -31,8 +31,4 @@ jobs:
         run: pip install -e .
 
       - name: Import check
-        run: |
-          python - <<EOF
-          import solidbeamfem
-          print("solidbeamfem import OK")
-          EOF
+        run: python -c "import solidbeamfem; print('solidbeamfem import OK')"
