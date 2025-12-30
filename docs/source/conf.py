@@ -1,5 +1,9 @@
-project = "solidbeamfem"
+project = "solidbeamFEM Documentation"
 author = "Jaafar Alaswad"
-extensions = ["myst_parser"]
+
+extensions = [
+    "sphinx_design",
+]
+
 html_theme = "sphinx_rtd_theme"
 exclude_patterns = []
