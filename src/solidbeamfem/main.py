@@ -3,18 +3,24 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from pre_processing import (
+from .pre_processing import (
     validate_inputs,
     create_mesh,
     impose_supports,
     compute_lame_parameters,
 )
-from processing import (
+
+from .processing import (
     newton_raphson_solver,
     shape_functions_3D,
 )
-from post_processing import compute_tip_displacement, plot_tip_displacement
-import visualize as viz
+
+from .post_processing import (
+    compute_tip_displacement,
+    plot_tip_displacement,
+)
+
+from . import visualize as viz
 
 # =============================================================================
 # Problem setup
