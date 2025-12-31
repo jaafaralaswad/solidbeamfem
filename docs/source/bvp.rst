@@ -4,7 +4,7 @@ Boundary Value Problem
 In order to construct a complete BVP, we need to bring together kinematics, balance relations and material law, in addition to the boundary conditions. We formulate the problem using convective coordinates for better structural mechanical interpretation and later implementation flexibility.
 
 Kinematics
-=============
+----------
 
 We distinguish between the reference configuration :math:`\mathcal{B}_0`
 with material coordinates :math:`\mathbf{X}`, and the current configuration
@@ -76,7 +76,7 @@ In Voigt notation, we exploit the symmetry of the strain tensor to write
    \end{bmatrix}^{\mathsf{T}} .
 
 Balance Relations
-====================
+-----------------
 
 The strong form of the equilibrium equations is given by
 
@@ -101,7 +101,7 @@ For static problems, inertial effects are neglected, and
 
 
 Material Law: Saint-Venant–Kirchhoff Material
-================================================
+---------------------------------------------
 
 The Helmholtz free energy is defined in the reference configuration as
 
@@ -151,7 +151,7 @@ The contravariant componenets of the fourth-order elasticity tensor are give by
 
 
 Boundary Conditions
-======================
+-------------------
 
 The problem is completed with the following boundary conditions.
 
