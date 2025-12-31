@@ -30,7 +30,7 @@ Package Installation
 
 You can install ``solidbeamfem`` using pip, or by cloning the GitHub repository.
 
-Install using pip (recommended)
+Install using pip
 -------------------------------
 
 .. code-block:: bash
@@ -112,16 +112,24 @@ Problem definition
    visualize_final = True       # visualize final configuration
    plot_displacement = True     # plot normalized tip displacement
 
+
 Running the solver
 ------------------
 
-Once the problem is defined, the solver can be executed directly.
+Once the problem parameters are defined, the solver is executed by running
+the main driver script.
 
-.. code-block:: python
+One can edit the problem parameters directly in ``main.py`` and then run the script.
 
-   import solidbeamfem
+.. code-block:: bash
 
-   solidbeamfem.main()
+   python -m solidbeamfem.main
+
+or equivalently:
+
+.. code-block:: bash
+
+   python src/solidbeamfem/main.py
 
 This will:
 
@@ -132,5 +140,4 @@ This will:
 
 More advanced modifications—such as changing constitutive models or boundary conditions—require manual changes to the corresponding
 implementation files within the package.
-
 
