@@ -19,7 +19,7 @@ bibliography: paper.bib
 
 # Summary
 
-Beams are fundamental structural elements in engineering. In finite element analysis, they are typically modeled using one-dimensional elements that incorporate both translational and rotational degrees of freedom. These elements are derived from classical beam theories such as Euler--Bernoulli and Timoshenko [@hughes2003finite]. While computationally efficient, such models cannot capture cross-sectional deformation or complex material behavior, and they present challenges for multiphysics coupling and contact modeling [@wriggers2008nonlinear]. These limitations arise from the underlying assumptions of the beam theories themselves, rather than from the finite element method.
+Beams are fundamental structural elements in engineering. In finite element analysis, they are typically modeled using one-dimensional elements that incorporate both translational and rotational degrees of freedom. These elements are derived from classical beam theories such as Euler--Bernoulli and Timoshenko [@hughes2003finite]. While computationally efficient, such models cannot capture cross-sectional deformation or complex material behavior, and they present challenges for multiphysics coupling and contact modeling. These limitations arise from the underlying assumptions of the beam theories themselves, rather than from the finite element method.
 
 ![One-dimensional beam element.\label{fig:beam_element}](beam_element.png){ width=50% }
 
@@ -48,11 +48,11 @@ Two numerical examples are presented to illustrate the ability of solidbeamFEM t
 
 The first example considers a cantilever beam bent into half a circle due to a bending moment at its free end. The applied moment is modeled as a linearly distributed follower traction acting on the end cross-section, ensuring consistency with nonlinear kinematics. This configuration represents a pure bending problem and is dominated by transverse shear locking when standard displacement-based brick elements are used.
 
-![Comparison between geometry-induced locking modes for a beam bent into half a circle.\label{fig:comparison_ex1}](comparison_ex1.png){ width=50% }
+![Comparison between geometry-induced locking modes for a beam bent into half a circle.\label{fig:comparison_ex1}](comparison_ex1.png){ width=80% }
 
 The second example examines a cantilever beam subjected to a conservative transverse shear loading. Under sufficiently large loading, this problem involves pronounced membrane locking. Minor contributions from transverse shear and curvature-thickness locking are also present.
 
-![Comparison between geometry-induced locking modes for a beam subjected to shear loading.\label{fig:comparison_ex2}](comparison_ex2.png){ width=50% }
+![Comparison between geometry-induced locking modes for a beam subjected to shear loading.\label{fig:comparison_ex2}](comparison_ex2.png){ width=80% }
 
 In both examples, numerical results are shown to be in agreement with analytical solutions as well as with previously published finite element formulations. These examples illustrate how solidbeamFEM enables systematic investigation of individual geometric locking mechanisms and their alleviation within a unified solid-beam framework.
 
