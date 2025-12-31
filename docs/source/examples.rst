@@ -103,7 +103,7 @@ The influence of the different locking modes can be assessed by selectively
 activating the corresponding alleviation mechanisms. For this problem, the
 response is dominated by transverse shear locking.
 
-.. figure:: comparison_ex1.jpg
+.. figure:: images/comparison_ex1.jpg
    :width: 80%
    :align: center
    :alt: Locking modes comparison for example 1
