@@ -30,7 +30,7 @@ induces a constant curvature that bends the beam into a half-circle. Initially, 
 
    # Material (Saint Venant–Kirchhoff)
    E = 1.2e7         # Young's modulus
-   nu = 0.0          # Poisson's ratio (nu = 0 avoids volumetric locking)
+   nu = 0.0          # Poisson's ratio (nu = 0 avoids Poisson and volumetric locking)
 
    # Loading
    load_type = "moment"   # "moment" or "shear"
@@ -132,7 +132,7 @@ set to ``k_max = 4.0``, corresponding to an applied force
 
    # Material (Saint Venant–Kirchhoff)
    E = 12         # Young's modulus
-   nu = 0.0          # Poisson's ratio (nu = 0 avoids volumetric locking)
+   nu = 0.0          # Poisson's ratio (nu = 0 avoids Poisson and volumetric locking)
 
    # Loading
    load_type = "shear"   # "moment" or "shear"
