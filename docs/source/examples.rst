@@ -115,7 +115,7 @@ Nuemrical Example 2
 -------------------
 
 We simulate a cantilever beam subjected to conservative shear loading using the following parameters. The load level is
-set to ``k_max = 4.0``, corresponding to an applied bending moment
+set to ``k_max = 4.0``, corresponding to an applied force
 :math:`F =  4 EI  / L^2`.
 
 
