@@ -1,10 +1,10 @@
 Examples
 ========
 
-Nuemrical Example 1
+Numerical Example 1
 -------------------
 
-The problem we solve here is a rectangular cantiliever beam subjected to bending moment applied at its tip.
+The problem we solve here is a rectangular cantilever beam subjected to bending moment applied at its tip.
 
 
 .. figure:: images/cantilever_bending.jpg
@@ -15,7 +15,7 @@ The problem we solve here is a rectangular cantiliever beam subjected to bending
 We simulate the cantilever using the following parameters. The load level is
 set to ``k_max = 0.5``, corresponding to an applied bending moment
 :math:`M = \pi E I / L`. According to classical elasticity theory, this moment
-induces a constant curvature that bends the beam into a half-circle. Initially, we do not actiavate the locking allevation.
+induces a constant curvature that bends the beam into a half-circle. Initially, we do not activate the locking allevation.
 
 .. code-block:: python
 
