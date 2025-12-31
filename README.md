@@ -4,13 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/solidbeamfem/badge/?version=latest)](https://solidbeamfem.readthedocs.io/en/latest/)
 
 # solidbeamFEM
-Nonlinear finite element solver in Python for beams modeled as continua using brick elements in convected curvilinear coordinates. It alleviates geometry-induced locking modes (membrane, transverse shear, and curvature–thickness locking) using the Assumed Natural Strain (ANS) method. Locking modes can be alleviated selectively to identify which modes are responsible for the observed locking behavior. The solver also supports comparisons with alternative techniques such as h- and p-refinement and reduced integration rules. Additional information and example problems can be found in the ReadTheDocs documentation:
-
-<div align="center">
-
-**[Read the Docs Documentation](https://solidbeamfem.readthedocs.io)**
-
-</div>
+Nonlinear finite element solver in Python for beams modeled as continua using brick elements in convected curvilinear coordinates. It alleviates geometry-induced locking modes (membrane, transverse shear, and curvature–thickness locking) using the Assumed Natural Strain (ANS) method. Locking modes can be alleviated selectively to identify which modes are responsible for the observed locking behavior. The solver also supports comparisons with alternative techniques such as h- and p-refinement and reduced integration rules.
 
 ## Table of Contents
 
@@ -31,9 +25,13 @@ The code has been tested with Python 3.12.
 
 ## Installation
 
-Please refer to the documentation for detailed installation and usage instructions.
+Please refer to the documentation for detailed installation and usage instructions, as well as example problems.
+
+<div align="center">
 
 **[Read the Docs Documentation](https://solidbeamfem.readthedocs.io)**
+
+</div>
 
 
 ## Community Contributions
