@@ -1,7 +1,7 @@
 Dependencies
 ============
 
-This package depends on:
+This package depends only on:
 
 - NumPy
 - Matplotlib
