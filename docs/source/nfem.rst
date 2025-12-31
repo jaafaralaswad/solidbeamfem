@@ -222,7 +222,7 @@ with the element internal force vector
 
    \mathbf{f}_{\mathrm{int}}^{e}
    =
-   \int_{\Omega^\ast}
+   \int_{\Omega^{\square}}
    \mathbf{B}_e^{\mathsf{T}} \, \hat{\mathbf{S}} \, J_e
    \, \mathrm{d}\xi \, \mathrm{d}\eta \, \mathrm{d}\zeta,
 
@@ -260,7 +260,7 @@ with
 
    \mathbf{K}_m^{e}
    =
-   \int_{\Omega^\ast}
+   \int_{\Omega^{\square}}
    \mathbf{B}_e^{\mathsf{T}} \, \hat{\mathbb{C}} \, \mathbf{B}_e \, J_e
    \, \mathrm{d}\xi \, \mathrm{d}\eta \, \mathrm{d}\zeta.
 
@@ -282,7 +282,7 @@ with
 
    \mathbf{K}_g^{IJ}
    =
-   \int_{\Omega^\ast}
+   \int_{\Omega^{\square}}
    S_{IJ} \, \mathbf{I}_3 \, J_e
    \, \mathrm{d}\xi \, \mathrm{d}\eta \, \mathrm{d}\zeta.
 
