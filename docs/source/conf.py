@@ -3,6 +3,7 @@ author = "Jaafar Alaswad"
 
 extensions = [
     "sphinx_design",
+    "sphinx.ext.mathjax",
 ]
 
 html_theme = "sphinx_rtd_theme"
