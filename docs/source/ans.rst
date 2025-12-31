@@ -45,15 +45,15 @@ ANS Strain Definition
 
 Let :math:`E^c` denote a compatible strain component evaluated at a tying point
 :math:`(\hat{\xi}_I,\eta,\zeta)`. The ANS strain evaluated at a Gauss point
-:math:`(\xi_{\mathrm{GP}},\eta_{\mathrm{GP},\zeta_{\mathrm{GP})` is defined as
+:math:`(\xi_{\mathrm{GP}},\eta_{\mathrm{GP}},\zeta_{\mathrm{GP}})` is defined as
 
 .. math::
 
-   E^{\mathrm{ANS}}(\xi_{\mathrm{GP}},\eta_{\mathrm{GP},\zeta_{\mathrm{GP})
+   E^{\mathrm{ANS}}(\xi_{\mathrm{GP}},\eta_{\mathrm{GP}},\zeta_{\mathrm{GP}})
    =
    \sum_{I=1}^{n_t}
    \bar{N}_I(\xi_{\mathrm{GP}})
-   \, E^c(\hat{\xi}_I,\eta_{\mathrm{GP},\zeta_{\mathrm{GP}),
+   \, E^c(\hat{\xi}_I,\eta_{\mathrm{GP}},\zeta_{\mathrm{GP}}),
 
 where:
 
