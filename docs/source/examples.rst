@@ -16,7 +16,7 @@ We simulate a cantilever beam using the following parameters. The load level is
 set to ``k_max = 0.5``, corresponding to an applied bending moment
 :math:`M = \pi E I / L`. According to classical elasticity theory, this moment
 induces a constant curvature that bends the beam into a half-circle in the
-absence of shear deformation.
+absence of shear deformation. Initially, we do not actiavate the locking allevation.
 
 .. code-block:: python
 
@@ -103,7 +103,7 @@ The influence of the different locking modes can be assessed by selectively
 activating the corresponding alleviation mechanisms. For this problem, the
 response is dominated by transverse shear locking.
 
-.. figure:: comparison_ex1.png
+.. figure:: comparison_ex1.jpg
    :width: 80%
    :align: center
    :alt: Locking modes comparison for example 1
