@@ -63,7 +63,7 @@ induces a constant curvature that bends the beam into a half-circle. Initially, 
 The solution is obviously locked.
 
 .. figure:: images/locked_config_ex1.png
-   :width: 100%
+   :width: 120%
    :align: center
    :alt: Locked deformed configuration for bent beam
 
@@ -87,7 +87,7 @@ Now, we activate the locking alleviation techniques
 The solution now is in excellent agreement with analytical solution.
 
 .. figure:: images/correct_config_ex1.png
-   :width: 100%
+   :width: 120%
    :align: center
    :alt: Correct deformed configuration for bent beam
 
@@ -166,7 +166,7 @@ set to ``k_max = 4.0``, corresponding to an applied bending moment
 After activating locking alleviation, the solution is in excellent agreement with analytical solution.
 
 .. figure:: images/correct_config_ex2.png
-   :width: 100%
+   :width: 120%
    :align: center
    :alt: Correct deformed configuration for sheared beam
 
