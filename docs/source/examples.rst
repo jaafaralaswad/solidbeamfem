@@ -181,7 +181,7 @@ Similar to above, the influence of the different locking modes can be assessed b
 activating the corresponding alleviation mechanisms. For this problem, the
 response is dominated by membrane locking, with some transverse shear and curvature-thickness locking.
 
-.. figure:: images/comparison_ex2.jpg
+.. figure:: images/comparison_ex2.png
    :width: 80%
    :align: center
    :alt: Locking modes comparison for example 2
