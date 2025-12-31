@@ -31,6 +31,8 @@ This package depends only on:
 - NumPy
 - Matplotlib
 
+The package has been tested on Python 3.12.
+
 
 Package Installation
 ====================
