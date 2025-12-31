@@ -18,8 +18,9 @@ reduced integration rules.
    :maxdepth: 2
    :hidden:
 
-   weak_form
-   ans_method
+   bvp
+   nfem
+   ans
    examples
 
 
