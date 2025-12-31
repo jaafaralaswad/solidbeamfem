@@ -1,4 +1,7 @@
 Dependencies
 ============
 
-List the required Python packages and versions here.
+This package depends on:
+
+- NumPy
+- Matplotlib
