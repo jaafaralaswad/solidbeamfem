@@ -12,11 +12,10 @@ The problem we solve here is a rectangular cantiliever beam subjected to bending
    :align: center
    :alt: Cantilever beam under bending
 
-We simulate a cantilever beam using the following parameters. The load level is
+We simulate the cantilever using the following parameters. The load level is
 set to ``k_max = 0.5``, corresponding to an applied bending moment
 :math:`M = \pi E I / L`. According to classical elasticity theory, this moment
-induces a constant curvature that bends the beam into a half-circle in the
-absence of shear deformation. Initially, we do not actiavate the locking allevation.
+induces a constant curvature that bends the beam into a half-circle. Initially, we do not actiavate the locking allevation.
 
 .. code-block:: python
 
@@ -115,6 +114,10 @@ response is dominated by transverse shear locking.
 Nuemrical Example 2
 -------------------
 
+We simulate a cantilever beam subjected to conservative shear loading using the following parameters. The load level is
+set to ``k_max = 4.0``, corresponding to an applied bending moment
+:math:`F =  4 EI  / L^2`.
+
 
 .. code-block:: python
 
@@ -160,10 +163,33 @@ Nuemrical Example 2
 
 
 
+After activating locking alleviation, the solution is in excellent agreement with analytical solution.
+
+.. figure:: images/correct_config_ex2.png
+   :width: 100%
+   :align: center
+   :alt: Correct deformed configuration for sheared beam
+
+
+.. figure:: images/correct_plot_ex2.png
+   :width: 80%
+   :align: center
+   :alt: Correct plot configuration for sheared beam
+
+
+Similar to above, the influence of the different locking modes can be assessed by selectively
+activating the corresponding alleviation mechanisms. For this problem, the
+response is dominated by membrane locking, with some transverse shear and curvature-thickness locking.
+
+.. figure:: images/comparison_ex2.jpg
+   :width: 80%
+   :align: center
+   :alt: Locking modes comparison for example 2
+
 
 
 Notes
-=====
+-----
 
 The parameters used in the above simulations are chosen to match those reported
 in the following references:
