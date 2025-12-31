@@ -100,3 +100,10 @@ as a follower load, defined as
 The load is applied as a first Piola–Kirchhoff stress tensor, meaning that
 it is defined over the undeformed area. The magnitude of the load remains
 constant, while its direction changes with deformation.
+
+.. figure:: images/bending_traction.jpg
+   :width: 65%
+   :align: center
+   :alt: Bending traction applied as follower load
+
+   Bending traction applied at the beam tip, modeled as a follower load.
