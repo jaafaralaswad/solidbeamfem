@@ -1,7 +1,14 @@
 solidbeamFEM Documentation
-=========================
+==========================
 
-Nonlinear finite element solver in Python for beams modeled as continua using brick elements in convected curvilinear coordinates. It alleviates geometry-induced locking modes (membrane, transverse shear, and curvature–thickness locking) using the Assumed Natural Strain (ANS) method. Locking modes can be alleviated selectively to identify which modes are responsible for the observed locking behavior. The solver also supports comparisons with alternative techniques such as h- and p-refinement and reduced integration rules.
+Nonlinear finite element solver in Python for beams modeled as continua using
+brick elements in convected curvilinear coordinates. It alleviates
+geometry-induced locking modes (membrane, transverse shear, and
+curvature–thickness locking) using the Assumed Natural Strain (ANS) method.
+Locking modes can be alleviated selectively to identify which modes are
+responsible for the observed locking behavior. The solver also supports
+comparisons with alternative techniques such as h- and p-refinement and
+reduced integration rules.
 
 .. image:: https://img.shields.io/badge/GitHub-Repository-black?logo=github
    :target: https://github.com/jaafaralaswad/solidbeamfem
@@ -28,7 +35,8 @@ This package depends only on:
 Package Installation
 ====================
 
-You can install ``solidbeamfem`` by cloning the GitHub repository.
+Users are expected to clone the GitHub repository and edit the main driver
+script directly to define the problem.
 
 Install by cloning the GitHub repository
 ---------------------------------------
@@ -40,8 +48,8 @@ Install by cloning the GitHub repository
    pip install .
 
 
-Locate the main driver script
------------------------------
+Locate and edit the main driver script
+-------------------------------------
 
 All problem parameters are defined in:
 
@@ -49,13 +57,9 @@ All problem parameters are defined in:
 
    src/solidbeamfem/main.py
 
-This file serves as the main entry point of the solver.
-
-Edit the problem parameters
----------------------------
-
-Open ``main.py`` and modify the parameters under the
-Problem setup section. Typical parameters include:
+This file serves as the main entry point of the solver. Open ``main.py`` and
+modify the parameters under the *Problem setup* section. Typical parameters
+include:
 
 - Beam geometry (width, height, length)
 - Material properties (Young’s modulus, Poisson’s ratio)
@@ -68,23 +72,11 @@ Problem setup section. Typical parameters include:
 
 After editing the parameters, save the file.
 
-Run the solver
---------------
-
-From the root of the cloned repository, execute:
-
-.. code-block:: bash
-
-   python -m solidbeamfem.main
-
-This command will run the solver using the parameters defined in
-``main.py`` and produce the corresponding results and visualizations.
-
 
 Usage
 =====
 
-Using ``solidbeamfem`` only requires defining the problem.
+Using ``solidbeamfem`` only requires defining the problem parameters.
 All numerical details—including finite element assembly, nonlinear solution,
 locking alleviation, and post-processing—are handled internally.
 
@@ -97,6 +89,7 @@ A typical workflow consists of:
 5. Running the solver and visualizing the results
 
 Below is a minimal example illustrating a complete problem definition.
+
 
 Problem definition
 ------------------
@@ -150,8 +143,6 @@ Running the solver
 Once the problem parameters are defined, the solver is executed by running
 the main driver script.
 
-One can edit the problem parameters directly in ``main.py`` and then run the script.
-
 .. code-block:: bash
 
    python -m solidbeamfem.main
@@ -169,6 +160,6 @@ This will:
 - Apply Assumed Natural Strain (ANS) corrections if enabled
 - Produce the requested visualizations and plots
 
-More advanced modifications—such as changing constitutive models or boundary conditions—require manual changes to the corresponding
-implementation files within the package.
-
+More advanced modifications—such as changing constitutive models or boundary
+conditions—require manual changes to the corresponding implementation files
+within the package.
