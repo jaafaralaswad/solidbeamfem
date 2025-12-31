@@ -157,3 +157,27 @@ Nuemrical Example 2
    visualize_reference = True   # visualize reference configuration
    visualize_final = True       # visualize final configuration
    plot_displacement = True     # plot normalized tip displacement
+
+
+
+
+
+Notes
+=====
+
+The parameters used in the above simulations are chosen to match those reported
+in the following references:
+
+.. [Frischkorn2013]
+   J. Frischkorn and S. Reese,
+   *A solid-beam finite element and non-linear constitutive modelling*,
+   Computer Methods in Applied Mechanics and Engineering,
+   **265**, 195–212 (2013).
+   https://doi.org/10.1016/j.cma.2013.06.002
+
+.. [Shafqat2024]
+   A. Shafqat, O. Weeger, and B. X. Xu,
+   *A robust finite strain isogeometric solid-beam element*,
+   Computer Methods in Applied Mechanics and Engineering,
+   **426**, 116993 (2024).
+   https://doi.org/10.1016/j.cma.2024.116993
