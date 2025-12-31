@@ -3,7 +3,7 @@ Boundary Value Problem
 
 In order to construct a complete BVP, we need to bring together kinematics, balance relations and material law, in addition to the boundary conditions. We formulate the problem using convective coordinates for better structural mechanical interpretation and later implementation flexibility.
 
-1. Kinematics
+Kinematics
 =============
 
 We distinguish between the reference configuration :math:`\mathcal{B}_0`
