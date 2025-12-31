@@ -28,16 +28,7 @@ This package depends only on:
 Package Installation
 ====================
 
-You can install ``solidbeamfem`` using pip, or by cloning the GitHub repository.
-
-Install using pip
--------------------------------
-
-.. code-block:: bash
-
-   pip install git+https://github.com/jaafaralaswad/solidbeamfem.git@main
-
-This installs the latest version from the ``main`` branch.
+You can install ``solidbeamfem`` by cloning the GitHub repository.
 
 Install by cloning the GitHub repository
 ---------------------------------------
@@ -48,6 +39,46 @@ Install by cloning the GitHub repository
    cd solidbeamfem
    pip install .
 
+
+Locate the main driver script
+-----------------------------
+
+All problem parameters are defined in:
+
+.. code-block:: text
+
+   src/solidbeamfem/main.py
+
+This file serves as the main entry point of the solver.
+
+Edit the problem parameters
+---------------------------
+
+Open ``main.py`` and modify the parameters under the
+Problem setup section. Typical parameters include:
+
+- Beam geometry (width, height, length)
+- Material properties (Young’s modulus, Poisson’s ratio)
+- Loading type and magnitude
+- Mesh discretization parameters
+- Numerical integration points
+- Assumed Natural Strain (ANS) locking-alleviation switches
+- Solver tolerances and load increments
+- Visualization options
+
+After editing the parameters, save the file.
+
+Run the solver
+--------------
+
+From the root of the cloned repository, execute:
+
+.. code-block:: bash
+
+   python -m solidbeamfem.main
+
+This command will run the solver using the parameters defined in
+``main.py`` and produce the corresponding results and visualizations.
 
 
 Usage
