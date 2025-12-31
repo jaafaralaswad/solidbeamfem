@@ -45,15 +45,15 @@ ANS Strain Definition
 
 Let :math:`E^c` denote a compatible strain component evaluated at a tying point
 :math:`(\hat{\xi}_I,\eta,\zeta)`. The ANS strain evaluated at a Gauss point
-:math:`(\xi_{\mathrm{GP}},\eta,\zeta)` is defined as
+:math:`(\xi_{\mathrm{GP}},\eta_{\mathrm{GP},\zeta_{\mathrm{GP})` is defined as
 
 .. math::
 
-   E^{\mathrm{ANS}}(\xi_{\mathrm{GP}},\eta,\zeta)
+   E^{\mathrm{ANS}}(\xi_{\mathrm{GP}},\eta_{\mathrm{GP},\zeta_{\mathrm{GP})
    =
    \sum_{I=1}^{n_t}
    \bar{N}_I(\xi_{\mathrm{GP}})
-   \, E^c(\hat{\xi}_I,\eta,\zeta),
+   \, E^c(\hat{\xi}_I,\eta_{\mathrm{GP},\zeta_{\mathrm{GP}),
 
 where:
 
@@ -110,3 +110,15 @@ The ANS method implemented in this work:
 - Preserves the standard finite element structure
 - Requires only element-level modifications
 - Allows selective activation of individual locking alleviation modes
+
+
+More details
+-------
+
+.. [Caseiro2014]
+   J. F. Caseiro, R. F. Valente, A. Reali, J. Kiendl,
+   F. Auricchio, and R. Alves de Sousa,
+   *On the Assumed Natural Strain method to alleviate locking
+   in solid-shell NURBS-based finite elements*,
+   Computational Mechanics, **53**, 1341–1353 (2014).
+   https://doi.org/10.1007/s00466-014-0978-4
