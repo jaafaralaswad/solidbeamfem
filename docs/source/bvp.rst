@@ -74,3 +74,99 @@ In Voigt notation, we exploit the symmetry of the strain tensor to write
    2E_{\eta\zeta} &
    2E_{\xi\zeta}
    \end{bmatrix}^{\mathsf{T}} .
+
+Balance Relations
+====================
+
+The strong form of the equilibrium equations is given by
+
+.. math::
+
+   \operatorname{Div} \, \mathbf{P}
+   + \rho_0 \left( \mathbf{b} - \ddot{\mathbf{x}} \right)
+   = \mathbf{0}
+   \qquad \text{in } \mathcal{B}_0,
+
+where:
+
+- :math:`\mathbf{P}` is the first Piola–Kirchhoff stress
+- :math:`\mathbf{b}` is the body force per unit reference volume
+- :math:`\rho_0` is the reference density
+
+For static problems, inertial effects are neglected, and
+
+.. math::
+
+   \ddot{\mathbf{x}} = \mathbf{0}.
+
+
+Material Law: Saint-Venant–Kirchhoff Material
+================================================
+
+The Helmholtz free energy is defined in the reference configuration as
+
+.. math::
+
+   \psi_0(\mathbf{C})
+   =
+   \frac{1}{8}\lambda (I_C - 3)^2
+   +
+   \frac{1}{4}\mu
+   \left(
+      I_C^2 - 2 I_C - 2 I\!I_C + 3
+   \right),
+
+where
+
+.. math::
+
+   I_C = \operatorname{tr}(\mathbf{C}),
+   \qquad
+   I\!I_C = \operatorname{tr}(\mathbf{C}^2).
+
+The second Piola–Kirchhoff stress is given by
+
+.. math::
+
+   \mathbf{S}
+   =
+   \lambda \, \operatorname{tr}(\mathbf{E}) \, \mathbf{I}
+   +
+   2\mu \, \mathbf{E}.
+
+The contravariant componenets of the fourth-order elasticity tensor are give by
+
+.. math::
+
+   \mathbb{C}^{ijkl}
+   =
+   \lambda \, G^{ij} G^{kl}
+   +
+   \mu
+   \left(
+      G^{ik} G^{jl}
+      +
+      G^{il} G^{jk}
+   \right).
+
+
+Boundary Conditions
+======================
+
+The problem is completed with the following boundary conditions.
+
+Displacement boundary conditions on :math:`\Gamma_u`:
+
+.. math::
+
+   \mathbf{u} = \bar{\mathbf{u}}
+   \qquad \text{on } \Gamma_u.
+
+Traction boundary conditions on :math:`\Gamma_t`:
+
+.. math::
+
+   \mathbf{P} \, \mathbf{N}
+   =
+   \bar{\mathbf{t}}
+   \qquad \text{on } \Gamma_t.
