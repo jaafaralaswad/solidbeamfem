@@ -11,3 +11,39 @@ Nonlinear finite element solver in Python for beams modeled as continua using br
 **[Read the Docs Documentation](https://solidbeamfem.readthedocs.io)**
 
 </div>
+
+## Table of Contents
+
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Community Contributions](#community-contributions)
+
+
+## Dependencies
+
+This package depends only on:
+
+- NumPy
+- Matplotlib
+
+The code has been tested with Python 3.12.
+
+
+## Installation
+
+Please refer to the documentation for detailed installation and usage instructions.
+
+**[Read the Docs Documentation](https://solidbeamfem.readthedocs.io)**
+
+
+## Community Contributions
+
+Community contributions are welcome.
+
+If you encounter any issues, please report them using the
+[GitHub Issues tracker](https://github.com/jaafaralaswad/solidbeamfem/issues).
+
+For efficiency, please include:
+
+- A minimal working example that reproduces the issue
+- The full error message or traceback
